@@ -1,0 +1,275 @@
+*{
+    margin: 0;
+    padding:0;
+}
+/* main-div */
+.main-div{
+    background-color: rgb(247, 241, 232);
+    width: 98.9vw;
+    height: 230vh;
+    display: flex;
+    flex-direction: column;
+   
+}
+@media( max-width:700px){
+    .main-div{
+     height: 300vh;
+    }
+}
+/* navbar */
+.navbar{
+    flex: 0.4;
+    display: flex;
+}
+@media( max-width:700px){
+    .navbar{
+        width: 100%;
+     height: 20vh;
+    }
+    .menu-bar > ul{
+        display: none;
+    }
+    .p-3{
+        display: none;
+    }
+    
+  
+    .cub , .cub-1{
+        display: none;
+    }
+    .wrapper{
+        margin-left: 10vh;
+    }
+}
+.logo-name{
+    position: relative;
+    flex: 3;
+}
+.logo-h{
+    position: absolute;
+    font-size: 1.8vmax;
+    margin: 3vh 5vw;
+}
+.menu-bar   {
+    align-items: center;
+    flex: 4;
+    justify-content:space-around ;
+    font-weight: 600;
+    display: flex;
+}
+a{
+    color: black;
+    text-decoration: none;
+
+}
+a:hover{
+  color: brown;
+}
+.button-book{
+    color: rgb(0, 0, 0);
+}
+.button-book:hover{
+    color:white ;
+}
+ul{
+    flex: 4;
+    justify-content: space-between;
+    font-size: small;
+    align-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    list-style: none;
+}
+.cart{
+   padding-top: 1.2vh;
+   font-family: Arial, Helvetica, sans-serif;
+    flex: 3;
+    font-weight: 600;
+}
+.p-1{
+    margin-top: 3.6vh;
+    position: absolute;
+    margin-left: 24vw;
+}
+/* main-pic */
+.main-pic{
+    background-image: url(main-pic.jpeg);
+    background-position: center;
+    background-size: cover;
+    flex:3;
+    background-color: rgb(253, 175, 191);
+    position: relative;
+}
+.wrapper{
+    position: absolute;
+    color: white;
+    width: 30vw;
+    margin: 25vh 6vw;
+}
+.p-2{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.p-3{
+    line-height: 2vmax;
+}
+.wrapper .dare{
+    font-size: 3vmax;
+    margin: 1.3vmax 0vmax;
+}
+/* bookin-place */
+.book-now{
+    flex:1;
+    position: relative;
+}
+.booking{
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    position: absolute;
+    display: flex;
+    width: 70vw;
+    height: 19vh;
+    justify-content: space-around;
+}
+.destination select{
+border: none;
+border-bottom: 2px solid black;
+font-family: Arial, Helvetica, sans-serif;
+   }
+.book-now select{
+    width: 10vw;
+    height: 4vh;
+    font-weight: 600;
+}
+.submit{
+    margin-left: 80vw;
+    position: absolute;
+    width: 10vw;
+    height: 19.2vh;
+    background-color: rgb(255, 135, 37);
+    text-align: center;
+}
+label{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 600;
+    opacity: 0.4;
+}
+ .submit >.order{
+font-family: Georgia, 'Times New Roman', Times, serif;
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+    padding: 7vh 2.5vw ;
+    color: white;
+}
+/* trip-planner */
+.trip-planner{
+    height: 100vh;
+    flex:3.5;
+    display: flex;
+}
+.right-side{
+   flex: 6;
+   font-family:Arial, Helvetica, sans-serif
+}
+.photos{
+    flex-wrap: wrap;
+    position: relative;
+    display: flex;
+    margin-top: 5vh;
+}
+img{
+    position: absolute;
+    width: 25vh;
+    transition: transform 1s;
+    box-shadow: 0 3px 8px black;
+}
+img:hover{
+    transform: translateY(-57px);
+}
+.pp-2{
+    margin-left: 30vh;
+}
+.pp-3{
+    margin-left: 60vh;
+}
+.pp-4{
+    margin-left: 90vh;
+}
+.card{
+    
+    width: 12.2vw;
+    height: 7vh;
+    position: absolute;
+}
+.card-1{
+    margin-top: 43vh;
+}
+.card-2{
+    margin-top: 43vh;
+    margin-left: 14.8vw;
+}
+.card-3{
+    margin-top: 43vh;
+    margin-left: 29.6vw;
+}
+.card-4{
+    margin-top: 43vh;
+    margin-left: 44.3vw;
+}
+.left-side{
+    flex: 4;
+  
+     position: relative;
+ }
+ .words{
+     margin-top: 6vh;
+     margin-left: 2vw;
+     width: 33vw;
+     height: 50vh;
+     position: absolute;
+ }
+ .left-words , .p-6{
+     margin-left: 4vw;
+     margin-top: 5vh;
+ }
+ .p-6{
+     line-height: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+ .left-words{
+     font-size: 3vmax;
+ }
+ .cub, .cub-1{
+     color: white;
+    margin-top: 48vh;
+     position: absolute;
+ }
+ .cub{
+     margin-top: 47vh;
+     margin-left: 6vw;
+     width: 3vw;
+     height: 6vh;
+     background-color: black;
+ }
+ .cub-1{
+     position: relative;
+     margin-left: 6.5vw;
+     width: 12vw;
+     height: 6vh;
+     background-color: rgb(255, 135, 37);
+ }
+ .lorem-1{
+     position: absolute;
+     margin-left: 0.5vw;
+     margin-top: 1vh;
+     font-size: 20px;
+ }
+/* footer */
+.footer{
+    flex: 1;
+}
+.footer-words , .p-7{
+    font-size: 2vmax;
+    margin-top: 2.5vh;
+    margin-left: 4vw;
+}
